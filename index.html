@@ -1,88 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>form</title>
+<link rel="stylesheet" href="CSS/style.css" >
 
-	<style type="text/css">
-		body{
+				
+
+
+</head>
+<body>
+
+	<form onSubmit="return valid();">
+
+<h2><i> Personal Details</i></h2>
+<hr>
+	<div id="input1">
+
+			<span>First Name<p>*</p> &nbsp:</span><input type="text" id="firstname" placeholder="First Name" class="a" autocomplete="off">
+
 			
-			background:linear-gradient(to left ,#1F618D ,#A569BD,#7D3C98);
-		}
+
+			<!--<span id="n" class="span"></span> --> 
+				
+
+			<br>
+
+			<span>Gender<p>*</p></span><span style="margin-left: 28px;"> :</span> <span style="margin-left: 30px;">Male</span><input type="radio" id="gender" name="gen"  class="b"><br>
+
+			<span>Email <span style="margin-left: 45px;">:</span></span><input type="text" id="email" placeholder="Email" class="a" autocomplete="off"><br>
+
+			<span>Address<p>*</p> <span style="margin-left: 23px;">:</span><input type="text" id="address" class="a" autocomplete="off">
+		</div>
+
+
+		<div id="input2">
+
+			<span>Last Name<p>* </p> &nbsp :</span><input type="text" id="lastname" placeholder="Last Name"  class="a" autocomplete="off">
+			<br>
+
+			
+
+					<span>Female</span><input type="radio" name="gen" class="b"><br>
+			
+			<span>Contact<p>*</p><span style="margin-left: 26px;"> :</span></span><input type="number" id="contact" placeholder="Contact" class="a" autocomplete="off"><br>
+
+			<span>State<p>*</p></span> <span style="margin-left: 43px;">:</span>
+			<select id="state" class="a">
+				<option value="select">---Select State---</option>
+				<option>Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option> 
+<option value="Assam">Assam </option>
+<option value="Bihar">Bihar</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Goa">Goa </option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh </option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand </option>
+<option value="Karnataka">Karnataka </option>
+<option value="Kerala">Kerala </option>
+<option value="Madhya Pradesh">Madhya Pradesh </option>
+<option value="Maharashtra">Maharashtra </option>
+<option value="Manipur">Manipur </option>
+<option value="Meghalaya">Meghalaya </option>
+<option value="Mizoram">Mizoram </option>
+<option value="Nagaland">Nagaland </option>
+<option value="Odisha">Odisha </option>
+<option value="Punjab">Punjab </option>
+<option value="Rajasthan">Rajasthan </option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu </option>
+<option value="Telangana">Telangana </option>
+<option value="Tripura">Tripura </option>
+<option value="Uttar Pradesh">Uttar Pradesh </option>
+
+<option value="Uttarakhand">Uttarakhand </option>
+<option value="West Bengal">West Bengal </option>			</select>
+
+
+
+
+
+	</div>
+<hr>
+<div class="user">
+ <span>User Name<p>*</p></span><span style="margin-left: 15px;"> :</span><input type="text" placeholder="User Name" class="a" id="user" autocomplete="off"><br>
+ <span>Password<p>*</p></span><span style="margin-left: 25px;"> :</span><input type="Password" placeholder="Password" class="a" id="password" > <br>
+  <span> C Password<p>*</p></span><span style="margin-left: 12px;"> :</span><input type="Password" placeholder=" C Password" class="a" id="conpassword" >
+
+ </div>
+
+	<div id="submit">
 		
-		.a{
-			margin-left: 30px;
-			margin-top: 20px;
-			width: 200px;
-			height: 20px;
-			
-			text-align: center;
-			color: black;
-		}
-		.b{
-			margin-left: 20px;
-			margin-top: 20px;
-		}
+		<input type="submit" value="Submit" class="button" >
 
-		span{
+		<input type="reset" Value="Cancel"  class="button">
+		
 
-			text-align:left;
+	</div>
 
-		}
-		p{
-			display: inline;
-			color: red;
-		}
-
-		#input1{
-			margin-top: 20;
-				margin-left: 300px;
-				text-align: left;
-				display: inline-block;
-				margin-bottom: 20px;
-
-		}
-		#input2{
-			margin-top: 20px;
-			display: inline-block;
-			margin-left: 20px;
-
-		}
-
-		#submit{
-				margin-left: 550px;
-				margin-top: 20px;
-		}
-		.button{
-
-			margin-top: 40px;
-
-			margin-left: 40px;
-		}
-		.span{
-			color: red;
-		}
-
-		#city{
-
-			width: 200px;
-			height: 20px;
-		}
-		.user{
-			margin-left: 500px;
-			margin-top: 30px;
-		}
-
-		h2{
-
-			color: gold;
-		}
-		hr{
-			margin-top: 10px;
-		}
-</style>
-
-
-<script type="text/javascript">
+</form>
+		<script type="text/javascript">
 	
 	function valid() {
 
@@ -339,109 +357,6 @@
 
 
 </script>
-
-
-
-
-
-				
-				
-
-
-</head>
-<body>
-
-	<form onSubmit="return valid();">
-
-<h2><i> Personal Details</i></h2>
-<hr>
-	<div id="input1">
-
-			<span>First Name<p>*</p> &nbsp:</span><input type="text" id="firstname" placeholder="First Name" class="a" autocomplete="off">
-
-			
-
-			<!--<span id="n" class="span"></span> --> 
-				
-
-			<br>
-
-			<span>Gender<p>*</p></span><span style="margin-left: 28px;"> :</span> <span style="margin-left: 30px;">Male</span><input type="radio" id="gender" name="gen"  class="b"><br>
-
-			<span>Email <span style="margin-left: 45px;">:</span></span><input type="text" id="email" placeholder="Email" class="a" autocomplete="off"><br>
-
-			<span>Address<p>*</p> <span style="margin-left: 23px;">:</span><input type="text" id="address" class="a" autocomplete="off">
-		</div>
-
-
-		<div id="input2">
-
-			<span>Last Name<p>* </p> &nbsp :</span><input type="text" id="lastname" placeholder="Last Name"  class="a" autocomplete="off">
-			<br>
-
-			
-
-					<span>Female</span><input type="radio" name="gen" class="b"><br>
-			
-			<span>Contact<p>*</p><span style="margin-left: 26px;"> :</span></span><input type="number" id="contact" placeholder="Contact" class="a" autocomplete="off"><br>
-
-			<span>State<p>*</p></span> <span style="margin-left: 43px;">:</span>
-			<select id="state" class="a">
-				<option value="select">---Select State---</option>
-				<option>Andhra Pradesh</option>
-<option value="Arunachal Pradesh">Arunachal Pradesh</option> 
-<option value="Assam">Assam </option>
-<option value="Bihar">Bihar</option>
-<option value="Chhattisgarh">Chhattisgarh</option>
-<option value="Goa">Goa </option>
-<option value="Gujarat">Gujarat</option>
-<option value="Haryana">Haryana</option>
-<option value="Himachal Pradesh">Himachal Pradesh </option>
-<option value="Jammu and Kashmir">Jammu and Kashmir</option>
-<option value="Jharkhand">Jharkhand </option>
-<option value="Karnataka">Karnataka </option>
-<option value="Kerala">Kerala </option>
-<option value="Madhya Pradesh">Madhya Pradesh </option>
-<option value="Maharashtra">Maharashtra </option>
-<option value="Manipur">Manipur </option>
-<option value="Meghalaya">Meghalaya </option>
-<option value="Mizoram">Mizoram </option>
-<option value="Nagaland">Nagaland </option>
-<option value="Odisha">Odisha </option>
-<option value="Punjab">Punjab </option>
-<option value="Rajasthan">Rajasthan </option>
-<option value="Sikkim">Sikkim</option>
-<option value="Tamil Nadu">Tamil Nadu </option>
-<option value="Telangana">Telangana </option>
-<option value="Tripura">Tripura </option>
-<option value="Uttar Pradesh">Uttar Pradesh </option>
-
-<option value="Uttarakhand">Uttarakhand </option>
-<option value="West Bengal">West Bengal </option>			</select>
-
-
-
-
-
-	</div>
-<hr>
-<div class="user">
- <span>User Name<p>*</p></span><span style="margin-left: 15px;"> :</span><input type="text" placeholder="User Name" class="a" id="user" autocomplete="off"><br>
- <span>Password<p>*</p></span><span style="margin-left: 25px;"> :</span><input type="Password" placeholder="Password" class="a" id="password" > <br>
-  <span> C Password<p>*</p></span><span style="margin-left: 12px;"> :</span><input type="Password" placeholder=" C Password" class="a" id="conpassword" >
-
- </div>
-
-	<div id="submit">
-		
-		<input type="submit" value="Submit" class="button" >
-
-		<input type="reset" Value="Cancel"  class="button">
-		
-
-	</div>
-
-</form>
 
 </body>
 
