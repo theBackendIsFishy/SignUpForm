@@ -1,1 +1,75 @@
+body{
+			
+			background:linear-gradient(to left ,#1F618D ,#A569BD,#7D3C98);
+		}
+		
+		.a{
+			margin-left: 30px;
+			margin-top: 20px;
+			width: 200px;
+			height: 20px;
+			
+			text-align: center;
+			color: black;
+		}
+		.b{
+			margin-left: 20px;
+			margin-top: 20px;
+		}
 
+		span{
+
+			text-align:left;
+
+		}
+		p{
+			display: inline;
+			color: red;
+		}
+
+		#input1{
+			margin-top: 20;
+				margin-left: 300px;
+				text-align: left;
+				display: inline-block;
+				margin-bottom: 20px;
+
+		}
+		#input2{
+			margin-top: 20px;
+			display: inline-block;
+			margin-left: 20px;
+
+		}
+
+		#submit{
+				margin-left: 550px;
+				margin-top: 20px;
+		}
+		.button{
+
+			margin-top: 40px;
+
+			margin-left: 40px;
+		}
+		.span{
+			color: red;
+		}
+
+		#city{
+
+			width: 200px;
+			height: 20px;
+		}
+		.user{
+			margin-left: 500px;
+			margin-top: 30px;
+		}
+
+		h2{
+
+			color: gold;
+		}
+		hr{
+			margin-top: 10px;
+		}
